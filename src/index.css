@@ -16,3 +16,40 @@ code {
     monospace;
 }
 
+@media (max-width: 1000px) {
+
+  *{
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+   .nav-link {
+      padding-right: var(--#{$prefix}navbar-nav-link-padding-x);
+      padding-left: var(--#{$prefix}navbar-nav-link-padding-x);
+    }
+  
+
+  .navbar-nav-scroll {
+    overflow: visible;
+  }
+
+  .navbar-collapse {
+    display: flex !important; 
+    flex-basis: auto;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .form-singup{
+    background: bg-red
+  }
+
+}
+
+

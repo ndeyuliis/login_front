@@ -25,7 +25,7 @@ function SingUp() {
 
   return (
     <form
-      className="container p-3 w-25 position-absolute top-50 start-50 translate-middle bg-black bg-opacity-75 text-white rounded-bottom"
+      className="form-singup container p-3 w-25 position-absolute top-50 start-50 translate-middle bg-black bg-opacity-75 text-white rounded-bottom"
       onSubmit={handleInputChange}
     >
       <div className="mb-3 ">
