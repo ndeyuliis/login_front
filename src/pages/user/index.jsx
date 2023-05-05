@@ -10,7 +10,8 @@ function User() {
 
   return (
     <>
-      <table className="container table table-dark table-striped w-75 position-absolute translate-middle top-50 start-50 rounded-bottom">
+      <table className="container table table-dark table-striped rounded-bottom">
+        <div className="table-box">
         <thead>
           <tr>
             <th scope="col">Id</th>
@@ -19,7 +20,7 @@ function User() {
             <th scope="col">Status</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="form-body">
           {userPage != null
             ? userPage.map((user) => (
                 <tr>
@@ -31,6 +32,7 @@ function User() {
               ))
             : "Do not user"}
         </tbody>
+        </div>
       </table>
     </>
   );

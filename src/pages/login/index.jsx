@@ -23,9 +23,9 @@ function Login() {
   }
 
   return (
-    <div className="container p-3 w-25 position-absolute top-50 start-50 translate-middle bg-black bg-opacity-75 text-white rounded-bottom">
+    <div className="container bg-black bg-opacity-75 text-white rounded-bottom">
       <form onSubmit={handleInputChange}>
-        <div className="mb-3">
+        <div className="form-login">
           <label className="form-label">Email address</label>
           <input
             name="email"
@@ -40,7 +40,7 @@ function Login() {
             We'll never share your email with anyone else.
           </div>
         </div>
-        <div className="mb-3">
+        <div className="form-login">
           <label className="form-label">Password</label>
           <input
             type="password"

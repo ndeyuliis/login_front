@@ -1,44 +1,55 @@
-.none{
+.none {
   display: block;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
+.navbar {
+  display: flex;
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  height: 500px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  padding: 100px;
+}
+
 @media (max-width: 1000px) {
-
-  *{
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  }
-
   .navbar-nav {
     flex-direction: row;
+    width: 80%;
   }
 
-   .nav-link {
-      padding-right: var(--#{$prefix}navbar-nav-link-padding-x);
-      padding-left: var(--#{$prefix}navbar-nav-link-padding-x);
-    }
-  
+  .nav-link {
+    padding-right: var(--#{$prefix}navbar-nav-link-padding-x);
+    padding-left: var(--#{$prefix}navbar-nav-link-padding-x);
+  }
 
   .navbar-nav-scroll {
     overflow: visible;
   }
 
   .navbar-collapse {
-    display: flex !important; 
+    display: flex !important;
     flex-basis: auto;
   }
 
@@ -46,10 +57,9 @@ code {
     display: none;
   }
 
-  .form-singup{
-    background: bg-red
+  .container {
+    display: flex;
+    justify-content: center;
+   
   }
-
 }
-
-

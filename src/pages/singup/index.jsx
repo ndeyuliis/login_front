@@ -24,8 +24,8 @@ function SingUp() {
   }
 
   return (
-    <form
-      className="form-singup container p-3 w-25 position-absolute top-50 start-50 translate-middle bg-black bg-opacity-75 text-white rounded-bottom"
+    <div className="container bg-black bg-opacity-75 text-white rounded-bottom">
+    <form className="form-singup"
       onSubmit={handleInputChange}
     >
       <div className="mb-3 ">
@@ -69,6 +69,7 @@ function SingUp() {
         Save
       </button>
     </form>
+    </div>
   );
 }
 
