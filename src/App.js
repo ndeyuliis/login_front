@@ -9,7 +9,7 @@ import SingUp from "./pages/singup"
 
 function App() {
   return (
-    <div className="app">
+    <div className="container">
       
     <Router>
     <NavBar/>

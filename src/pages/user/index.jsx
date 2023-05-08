@@ -9,14 +9,15 @@ function User() {
   }, []);
 
   return (
-    <>
-      <table className="container table table-dark table-striped rounded-bottom">
-        <div className="table-box">
+    
+      <div className="table-responsive">
+
+      <table className="table table-dark table-striped rounded-bottom">
         <thead>
           <tr>
-            <th scope="col">Id</th>
+            <th class=".d-sm-none .d-md-block" scope="col">Id</th>
             <th scope="col">Email</th>
-            <th scope="col">Password</th>
+            <th class=".d-sm-none .d-md-block" scope="col">Password</th>
             <th scope="col">Status</th>
           </tr>
         </thead>
@@ -24,17 +25,17 @@ function User() {
           {userPage != null
             ? userPage.map((user) => (
                 <tr>
-                  <th scope="row">{user._id}</th>
+                  <th class=".d-sm-none .d-md-block" scope="row">{user._id}</th>
                   <td>{user.userName}</td>
-                  <td>{user.password}</td>
+                  <td class=".d-sm-none .d-md-block">{user.password}</td>
                   <td>{user.status}</td>
                 </tr>
               ))
             : "Do not user"}
         </tbody>
-        </div>
       </table>
-    </>
+      </div>
+
   );
 }
 

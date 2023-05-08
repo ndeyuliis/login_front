@@ -23,7 +23,7 @@ function Login() {
   }
 
   return (
-    <div className="container bg-black bg-opacity-75 text-white rounded-bottom">
+    <div className="form bg-black bg-opacity-75 text-white rounded-bottom">
       <form onSubmit={handleInputChange}>
         <div className="form-login">
           <label className="form-label">Email address</label>

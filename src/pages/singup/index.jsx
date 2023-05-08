@@ -24,7 +24,7 @@ function SingUp() {
   }
 
   return (
-    <div className="container bg-black bg-opacity-75 text-white rounded-bottom">
+    <div className="form bg-black bg-opacity-75 text-white rounded-bottom">
     <form className="form-singup"
       onSubmit={handleInputChange}
     >

@@ -1,11 +1,9 @@
 export const HeaderComponent = () =>{
     return(
-        <div>
-            <div  className="container">
+            <div className="header">
             <h1  className="display-1 fw-bold">
-                Welcome to HiperDev
+                Welcome HiperDev
             </h1>
             </div>
-        </div>
     )
 }
