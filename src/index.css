@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,22 +16,18 @@ code {
     monospace;
 }
 
-h1{
-  text-align: center;
-  padding: 0em;
-  
-}
-
 .navbar {
   display: flex;
+ 
 }
 .navbar-collapse {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .header {
- padding: 15em 4em;
+ padding: 15em 30em;
 }
 
 .form{
@@ -58,16 +54,19 @@ margin: 10em 0em;
 
   .header{
     text-align: center;
+    padding: 15em 0em;
     }
 
   .navbar-nav {
     flex-direction: row;
     width: 80%;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-link {
-    padding-right: var(--#{$prefix}navbar-nav-link-padding-x);
-    padding-left: var(--#{$prefix}navbar-nav-link-padding-x);
+       align-items: center;
+    justify-content: center;
   }
 
   .navbar-nav-scroll {
@@ -77,6 +76,7 @@ margin: 10em 0em;
   .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
+   
   }
 
   .navbar-toggler {
