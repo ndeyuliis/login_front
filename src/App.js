@@ -9,7 +9,6 @@ import SingUp from "./pages/singup"
 
 function App() {
   return (
-    <div className="container">
       
     <Router>
     <NavBar/>
@@ -20,7 +19,6 @@ function App() {
         <Route path="/singup" element={<SingUp />} />
       </Routes>
     </Router>
-    </div>
   );
 };
 

@@ -16,18 +16,9 @@ code {
     monospace;
 }
 
-.navbar {
-  display: flex;
- 
-}
-.navbar-collapse {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .header {
- padding: 15em 30em;
+  text-align: center;
+  margin-top: 14em;
 }
 
 .form{
@@ -51,37 +42,6 @@ margin: 10em 0em;
 
 
 @media (max-width: 1000px) {
-
-  .header{
-    text-align: center;
-    padding: 15em 0em;
-    }
-
-  .navbar-nav {
-    flex-direction: row;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav-link {
-       align-items: center;
-    justify-content: center;
-  }
-
-  .navbar-nav-scroll {
-    overflow: visible;
-  }
-
-  .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-   
-  }
-
-  .navbar-toggler {
-    display: none;
-  }
 
   .form{
     margin: 2em 0em;
